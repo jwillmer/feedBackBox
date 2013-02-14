@@ -1,0 +1,100 @@
+#fpi_feedback {
+    z-index: 999999;
+    position: fixed;
+    width: 60px;
+    height: 350px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 16px;
+    color: white;
+}
+
+#fpi_title {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+    #fpi_title h2 {
+        font-size: 18px;
+        padding: 0px 10px 10px 10px;
+        margin: 0;
+    }
+
+#fpi_content {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    width: 275px;
+    height: 300px;
+    padding: 10px 10px 10px 20px;
+    background-color: #333333;
+}
+
+    #fpi_content #fpi_header_message {
+        margin-bottom: 20px;
+        margin-left: 5px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    #fpi_content #fpi_submit_username, #fpi_content #fpi_submit_message {
+        margin: 10px 5px;
+    }
+
+        #fpi_content #fpi_submit_username input, #fpi_content #fpi_submit_message textarea {
+            width: 100%;
+            resize: none;
+        }
+
+
+    #fpi_content #fpi_submit_message {
+    }
+
+        #fpi_content #fpi_submit_message textarea {
+            height: 120px;
+            font-family: georgia;
+	        font-size:1em;
+
+        }
+
+    #fpi_content #fpi_submit_submit {
+        text-align: right;
+        margin: 10px 0px;
+    }
+
+        #fpi_content #fpi_submit_submit input {
+            width: 80px;
+            height: 30px;
+            background: #F5410F none repeat scroll 0 0;
+            outline-style: none;
+            outline-width: medium;
+            border: 3px solid #F52D0F;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: white;
+        }
+
+        #fpi_content #fpi_ajax_message {
+            padding-top: 50px;
+            text-align: center;
+           
+        }
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
